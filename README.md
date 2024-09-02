@@ -1,16 +1,39 @@
 # Edge-Model-Infra
 
-A distributed edge computing infrastructure for Large Language Model (LLM) deployment and management, designed for efficient model serving and communication in edge environments.
+🚧 **开发中** - 用于大语言模型（LLM）部署和管理的分布式边缘计算基础设施
 
-## 🚀 Features
+## 📋 项目状态
 
-- **Distributed Architecture**: Modular design with separate components for infrastructure control, unit management, and network communication
-- **LLM Integration**: Built-in support for LLM model deployment and inference
-- **High-Performance Communication**: ZeroMQ-based messaging system for low-latency inter-component communication
-- **Docker Support**: Containerized deployment with pre-configured dependencies
-- **TCP/JSON API**: RESTful-like API for easy integration with external applications
-- **Event-Driven Architecture**: Asynchronous event processing using eventpp library
-- **Cross-Platform**: Linux-based deployment with comprehensive dependency management
+**当前版本**: v0.1.0-alpha
+**开发阶段**: 初始化和基础架构搭建
+**最后更新**: 2024年9月
+**开发者**: gugugu5331
+
+## 🎯 项目目标
+
+构建高性能、可扩展的边缘LLM推理基础设施，支持：
+
+- 分布式模型部署
+- 高效通信协议
+- GPU加速推理
+- 容器化部署
+
+## 🏗️ 开发进度
+
+- [x] 项目初始化
+- [ ] 基础工具库开发
+- [ ] 网络通信层实现
+- [ ] 消息协议设计
+- [ ] LLM集成接口
+- [ ] CUDA优化支持
+
+## 🚀 计划功能
+
+- **分布式架构**: 模块化设计，组件独立
+- **LLM集成**: 内置模型部署和推理支持
+- **高性能通信**: 基于ZeroMQ的消息系统
+- **Docker支持**: 容器化部署方案
+- **事件驱动**: 异步事件处理架构
 
 ## 📁 Project Structure
 
