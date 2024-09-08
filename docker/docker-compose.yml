@@ -1,0 +1,24 @@
+version: '3.8'
+
+services:
+  edge-model-infra:
+    build:
+      context: ..
+      dockerfile: docker/Dockerfile
+    container_name: edge-model-infra
+    ports:
+      - "8080:8080"
+      - "8081:8081"
+    volumes:
+      - ../:/app
+      - /tmp:/tmp
+    environment:
+      - LOG_LEVEL=INFO
+      - NETWORK_DEBUG=0
+    networks:
+      - edge-network
+    restart: unless-stopped
+
+networks:
+  edge-network:
+    driver: bridge
